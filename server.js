@@ -46,7 +46,7 @@ app.get('/api/clientinfo', client.info);
 app.get('/protected-endpoint',
     passport.authenticate('bearer', {session: false}),
     function(req, res){
-        res.json(req.user.name);
+        res.json(req.user);
     }
 );
 
