@@ -50,4 +50,4 @@ app.get('/protected-endpoint',
     }
 );
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 80);
